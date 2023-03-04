@@ -1,0 +1,87 @@
+body{
+    background-color: #272b30;
+    font-family: "Comfortaa", cursive;
+}
+header img{
+    height: 30vh;
+    background-size: cover;
+    object-fit: cover;
+}
+
+header .layer{
+    background-color: rgba(58, 73, 123, 0.4);
+}
+
+.nav-Bg{
+    background-color: rgb(58, 73, 123);
+    margin-top: -50px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+.nav-Bg img{
+    width: 20%;
+}
+
+.navbar .navbar-nav .nav-link{
+    transition: all .5s ease-in;
+    color: #fff;
+}
+
+.navbar .navbar-nav .active,
+.navbar .navbar-nav .nav-link:hover{
+    color: #09c;
+}
+
+.card{
+    background-color: #272b30;
+    cursor: pointer;
+}
+
+.card-footer p{
+    font-size: 14px; 
+    margin: 0;
+}
+
+.Details{
+    display: none;
+}
+
+.Details p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.Details .close{
+    top: 5%;
+    right: 8%;
+    cursor: pointer;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    border-width: 3px 2px 3px 2px;
+    border-style: solid dotted solid dotted;
+    border-color: #de3500 rgba(255, 255, 255,0.3) #fff rgba(151, 107, 93, 0.3);
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: 1s rotate linear infinite;
+ }
+ .loader:before , .loader:after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color:#fff;
+    transform: translate(-10px, 19px) rotate(-35deg);
+  }
+ .loader:after {
+    border-color: #de3500 #0000 #0000 #0000 ;
+    transform: translate(32px, 3px) rotate(-35deg);
+  }
+   @keyframes rotate {
+    100%{    transform: rotate(360deg)}
+  }
